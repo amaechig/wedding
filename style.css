@@ -11,7 +11,7 @@ hr {
   padding: 0px;
   /* font-family: Arial, Helvetica, sans-serif; */
 }
-#header img {
+.background-image {
   width: 100%;
   object-fit: cover;
 }
@@ -47,9 +47,12 @@ hr {
 }
 
 .section-2 {
-  padding: 8%;
+  padding: 8% 0;
   font-family: "poppins", sans-serif;
   text-align: center;
+}
+#header-2 {
+  padding: 16px;
 }
 .happy {
   color: sienna;
@@ -110,9 +113,22 @@ div.couple:hover {
 }
 
 .section-3 {
-  padding: 8%;
+  padding: 8% 0;
   font-family: "poppins", sans-serif;
+}
+#header-3-main {
+  background-color: sienna;
+  color: sienna;
+  /* overflow: visible; */
+}
+#header-3 {
+  width: 100%;
   text-align: center;
-  /* background-color: navajowhite; */
+  background-color: navajowhite;
   rotate: -4deg;
+  transition: transform 0.3s ease-in-out; /* Add transition */
+}
+
+#header-3:hover {
+  transform: rotate(0deg); /* Correct rotation syntax */
 }
