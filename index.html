@@ -11,63 +11,148 @@
         href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/nav-style.css">
+    <link rel="stylesheet" href="./css/header-style.css">
+    <link rel="stylesheet" href="./css/base-style.css">
 </head>
 
 <body>
     <div class="main-container">
-        <div id="header">
-            <img class="background-image" src="./assets/images/banner-img.jpg" alt="two couples in a field- image">
-            <div class="date-container">
-                <h1 class="title">Save the date</h1>
-                <h3 class="date">- 19 - 12 - 19...</h4>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Gallery</a>
+                </li>
+                <li>
+                    <a href="#">The Story</a>
+                </li>
+                <li>
+                    <a href="#">The Wedding</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <section id="section-container">
+            <img class="header-image" src="./assets/images/banner-img.jpg" alt="two couples in a field- image">
+            <div class="date-info">
+                <h1 class="event-title">Save the date</h1>
+                <h3 class="event-date">- 19 - 12 - 19...</h4>
             </div>
 
-            <div class="info">
-                <i class="ri-heart-2-fill inline-info"></i>
-                <h2 class="inline-info">We are getting married</h2>
-                <i class="ri-heart-2-fill inline-info"></i>
+            <div class="wedding-info">
+                <i class="ri-heart-2-fill icon"></i>
+                <h2 class="event-description icon">We are getting married</h2>
+                <i class="ri-heart-2-fill icon"></i>
             </div>
-        </div>
+        </section>
 
-        <div class="section-2">
-            <div id="header-2">
+        <section class="section-container">
+            <div class="container">
                 <h1>The <span class="happy">Happy</span> Couple</h1><br>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed lectus ante. Aenean non
+                <p class="blurb">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed lectus ante. Aenean
+                    non
                     ultricies dui. Maecenas viverra nulla at rutrum vulputate.Aliquam erat volutpat.</p><br>
                 <i class="ri-heart-2-fill inline-info"></i>
                 <i class="ri-heart-2-fill inline-info grey"></i>
             </div>
 
-            <div id="couple-id">
-                <div class="couple">
+            <div class="container">
+                <div class="couples-info">
                     <img src="./assets/images/couple-1.jpg" alt="couple-1">
-                    <p class="name">John Doe <span class="status">Groom</span></p>
+                    <p class="couples-name">John Doe <span class="status">Groom</span></p>
                 </div>
 
-                <div class="couple">
+                <div class="couples-info">
                     <img src="./assets/images/couple-2.jpg" alt="couple-2">
 
-                    <div class="name-container">
-                        <p class="name">Jane Doe <span class="status">Bride</span></p>
-                    </div>
+                    <p class="couples-name">Jane Doe <span class="status">Bride</span></p>
                 </div>
             </div>
-        </div>
-    </div>
-
-    <div class="section-3">
-        <div id="header-3-main">
-            <div id="header-3">
-                <i class="ri-3x ri-alarm-fill"></i>
-                <h1>Count Down</h1>
-                <p>Count Down</p>
+        </section>
+        <section>
+            <div id="header">
+                <div id="subheader">
+                    <i class="ri-3x ri-alarm-fill"></i>
+                    <h1>Count Down</h1>
+                    <p>0W - 0D - 0h - 0m - 0s</p>
+                </div>
             </div>
-        </div>
 
-        <img class="background-image" src="./assets/images/time.jpg" alt="">
+            <img class="header-image" src="./assets/images/time.jpg" alt="">
+            <div class="event-address">
+                <p>
+                    *** AT FOXEGAN HOTEL & RESTAURANT, LOS ANGELES ***
+                </p>
+            </div>
+        </section>
+
+        <section class="section-container">
+            <div class="container">
+                <h1 class="section-title">THE WEDDING </h1>
+                <p class="blurb"> Lorem ipsum dolor sit amet, consectetur adipiscing lorem ipsum dolor sit amet,
+                    consectetur adipiscing </p>
+                <div class="heart-icons">
+                    <i class="ri-heart-2-fill"></i>
+                    <i class="ri-heart-2-fill grey"></i>
+                </div>
+            </div>
+
+
+            <div class="details">
+                <img src="./assets/images/location.jpg" alt="LOCATION image">
+                <h3 class="title">LOCATION</h3>
+                <div class="des-container">
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices
+                        malesuada ante quis pharetra. Nullam non </p>
+                </div>
+            </div>
+
+            <div class="details">
+                <img src="./assets/images/gift.jpg" alt="GIFT REGISTRY image">
+                <h3 class="title">GIFT REGISTRY</h3>
+                <article class="des-container">
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices
+                        malesuada ante quis pharetra. Nullam non </p>
+            </div>
+            <div class="details">
+                <img src="./assets/images/accomodation.jpg" alt="ACCOMODATION image">
+                <h3 class="title">ACCOMODATION</h3>
+                <article class="des-container">
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices
+                        malesuada ante quis pharetra. Nullam non </p>
+            </div>
+        </section>
+
+        <section id="section-container">
+            <div class="container">
+                <div class="heart-icons">
+                    <i class="ri-heart-2-fill"></i>
+                    <i class="ri-heart-2-fill grey"></i>
+                </div>
+
+                <h2 class="section-title">ARE YOU ATTENDING</h2>
+                <p class="blurb">Please reserve before June 19th, 2015. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing </p>
+                <button type="button" class="reserve" onclick="window.location.href='#'">RSVP</button>
+            </div>
+
+            <div class="header-image-container">
+                <img class="header-image" src="assets/images/thank-you.jpg" alt="thank-you image">
+            </div>
+
+        </section>
     </div>
-
 </body>
 
 </html>
