@@ -4,23 +4,19 @@ nav {
 }
 
 nav ul {
-  /* display: flex; */
+  display: flex;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 20px; /* Space between items */
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 1rem;
 }
 
 nav ul li a {
-  text-decoration: none;
   color: white;
   font-weight: bold;
-  padding: 10px;
+  padding: 0.5rem;
+  border-radius: 1rem;
 }
 
 nav ul li a:hover {
