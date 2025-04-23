@@ -1,25 +1,52 @@
-nav {
-  background-color: sienna;
-  padding: 10px 20px;
+.navbar {
+  width: 100%;
+  position: absolute;
+  padding: 1rem 2rem;
+  background-color: rgba(24, 43, 78,0.5);
 }
 
-nav ul {
+.menu {
   display: flex;
   list-style-type: none;
   justify-content: center;
   flex-wrap: wrap;
-  align-content: center;
   gap: 1rem;
 }
-
-nav ul li a {
-  color: white;
-  font-weight: bold;
+.menu > li {
+  position: relative;
+}
+.menu a {
+  display: block;
+  font-weight: 500;
   padding: 0.5rem;
-  border-radius: 1rem;
+  color: white;
+  transition: background 0.3s;
 }
 
-nav ul li a:hover {
-  background-color: #fff; /* Hover effect */
-  color: #000;
+.menu a:hover {
+  color: sienna;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  list-style: none;
+  border-top: 0.3rem solid sienna;
+  background-color: white;
+  z-index: 1000;
+}
+.dropdown-menu a {
+  padding: 1rem;
+  color: black;
+}
+.dropdown-menu li > a:hover {
+  background-color: sienna;
+  color: white;
+}
+.dropdown:hover .dropdown-menu {
+  display: flex;
+  flex-direction: column;
 }

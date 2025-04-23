@@ -14,20 +14,28 @@
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/nav-style.css">
-    <link rel="stylesheet" href="./css/base-style.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <ul class="menu">
                 <li>
                     <a href="index.html">Home</a>
                 </li>
                 <i class="ri-heart-2-fill"></i>
-                <li>
+                <li class="dropdown">
                     <a href="about-couples.html">About</a>
-                </li> <i class="ri-heart-2-fill"></i>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="about-him.html">About Him</a>
+                        </li>
+                        <li>
+                            <a href="about-her.html">About Her</a>
+                        </li>
+                    </ul>
+                </li>
+                <i class="ri-heart-2-fill"></i>
                 <li>
                     <a href="#">Gallery</a>
                 </li> <i class="ri-heart-2-fill"></i>
@@ -64,7 +72,7 @@
 
         </section>
 
-        <section id="the-couples-info" class="section-container">
+        <section id="the-couples-info">
             <div class="container">
                 <article>
                     <h1>The <span class="happy">Happy</span> Couple</h1><br>
@@ -82,16 +90,21 @@
 
             <div id="couples">
                 <!-- TODO: Make previewable -->
-                <article class="couples-info">
+                <div class="couples-info">
                     <img src="./assets/images/people/groom2.webp" alt="couple-1">
+
                     <p class="couples-name">John Doe <span class="status">Groom</span></p>
-                </article>
 
-                <article class="couples-info">
+                </div>
+
+                <div class="couples-info">
                     <img src="./assets/images/people/bride33.jpg" alt="couple-2">
+                    <div class="couples-name">
+                        <p>Jane Doe <span class="status">Bride</span></p>
+                    </div>
 
-                    <p class="couples-name">Jane Doe <span class="status">Bride</span></p>
-                </article>
+
+                </div>
             </div>
         </section>
 
