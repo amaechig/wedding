@@ -17,45 +17,14 @@
 </head>
 
 <body>
+    <!-- Navigation component -->
     <header>
-        <nav class="navbar">
-            <ul class="menu">
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <i class="ri-heart-2-fill"></i>
-                <li class="dropdown">
-                    <a href="about-couples.html">About</a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="about-him.html">About Him</a>
-                        </li>
-                        <li>
-                            <a href="about-her.html">About Her</a>
-                        </li>
-                    </ul>
-                </li>
-                <i class="ri-heart-2-fill"></i>
-                <li>
-                    <a href="#">Gallery</a>
-                </li> <i class="ri-heart-2-fill"></i>
-                <li>
-                    <a href="#">The Story</a>
-                </li> <i class="ri-heart-2-fill"></i>
-                <li>
-                    <a href="#">The Wedding</a>
-                </li> <i class="ri-heart-2-fill"></i>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-
-            </ul>
-        </nav>
+        <div id="navbar"></div>
     </header>
 
     <main>
         <section id="hero">
-            <div id="hero-background-filter">
+            <div id="Reusable-hero-background-filter">
                 <div class="date-info rotate">
                     <h1 class="event-title">Save <br>the date</h1>
                     <time class="event-date" datetime="2019-12-19">
@@ -206,6 +175,15 @@
             <p>&copy; 2025 Developed by George</p>
         </div>
     </footer>
+    <!-- Import Navigation component -->
+    <script>
+        fetch('./components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar').innerHTML = data;
+            });
+    </script>
 </body>
+
 
 </html>

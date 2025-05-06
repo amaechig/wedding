@@ -1,52 +1,244 @@
-.navbar {
-  width: 100%;
-  position: absolute;
-  padding: 1rem 2rem;
-  background-color: rgba(24, 43, 78,0.5);
+/* CSS LOGO */
+.css-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 100%;
+  padding: 2rem 1rem;
+  background-color: sienna;
+  color: white;
+  font-size: 1.4rem;
 }
 
-.menu {
+.logo-icon {
+  color: white;
+}
+
+/* Place navbar on top of the hero section making it transparent*/
+.navbar-container {
+  width: 100%;
+  position: absolute;
+  background-color: rgba(24, 43, 78, 0.5);
+}
+
+/* Nav menu Unordesienna list */
+#nav-menu {
   display: flex;
   list-style-type: none;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 1rem;
+  padding: 1rem;
 }
-.menu > li {
+
+/* Positioning list element */
+#nav-menu > .nav-menu-item {
   position: relative;
 }
-.menu a {
-  display: block;
-  font-weight: 500;
-  padding: 0.5rem;
-  color: white;
-  transition: background 0.3s;
-}
 
-.menu a:hover {
+/* Nav link style */
+#nav-menu .nav-menu-item > a {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: white;
+  transition: background 0.7s;
+}
+#nav-menu .nav-menu-item > a:hover {
   color: sienna;
 }
-
+/* Drop down menus */
 .dropdown-menu {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 180px;
-  list-style: none;
-  border-top: 0.3rem solid sienna;
-  background-color: white;
-  z-index: 1000;
 }
-.dropdown-menu a {
-  padding: 1rem;
+.dropdown-menu .dropdown-menu-list-item {
   color: black;
+  padding: 1rem;
+  transition: background 0.3s;
 }
-.dropdown-menu li > a:hover {
+.dropdown-menu-list-item a {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+.dropdown-menu .dropdown-menu-list-item:hover {
   background-color: sienna;
   color: white;
 }
+
 .dropdown:hover .dropdown-menu {
   display: flex;
   flex-direction: column;
+  position: absolute;
+  top: 100%;
+  border-top: 0.5rem solid sienna;
+  min-width: 20rem;
+  list-style: none;
+  background-color: white;
+  z-index: 1;
+}
+
+/* Hide mobile menu */
+#mobile-logo-container {
+  display: none;
+}
+/* Hide Mobile menus */
+#mobile-menu-container {
+  display: none;
+}
+
+/* Hide the mobile menucheck-box */
+#mobile-menu-toggle {
+  display: none;
+}
+
+/* Hide hamburger icon */
+label {
+  display: none;
+}
+
+/* Hide about toggle checkbox */
+#toggle-about {
+  display: none;
+}
+
+/* Hide gallery toggle check */
+#toggle-gallery {
+  display: none;
+}
+
+/* Mobile responsivenes */
+@media (max-width: 800px) {
+  /* Hide desktop nav-bar */
+  #nav-menu {
+    display: none;
+  }
+  /* Hide Desktop heart icons */
+  .nav-heart-icon {
+    display: none;
+  }
+
+  /* Show label with the burger icon */
+  label {
+    display: inline-block;
+  }
+
+  /* Hide the hamburger menu check-box */
+  #mobile-menu-toggle {
+    display: none;
+  }
+
+  .navbar-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: white;
+    transition: background 0.5s;
+    padding: 0;
+    z-index: 1;
+  }
+
+  #mobile-logo-container {
+    display: inline-block; /* fit inline with the menu-icon*/
+    padding: 1rem;
+    margin-right: auto; /* Take as much space by pushing the logo to the right*/
+  }
+
+  /* Resize hamburger icon */
+  .mobile-menu-icon {
+    font-size: 4rem;
+    cursor: pointer;
+  }
+
+  /* Hide mobile menu*/
+  #mobile-menu-container {
+    display: none;
+  }
+
+  .mobile-menu-list-item {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(243, 243, 243);
+    transition: background 0.5s;
+  }
+
+  /* Main menu hover effect */
+  .mobile-menu-list-item:hover {
+    background-color: sienna;
+    color: white;
+  }
+
+  /* Display Mobile Navigation menu when the check-box is clicked */
+  #mobile-menu-toggle:checked ~ #mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%; /* always brake to the bottom*/
+  }
+
+  /* mobile Dropdown menu*/
+  #mobile-dropdown-menu {
+    display: none; /* Hide mobile-dropdown-menu*/
+  }
+
+  /* Hide about toggle check box */
+  #toggle-about {
+    display: none;
+  }
+
+  /* Hide gallery checkbox */
+  #toggle-gallery {
+    display: none;
+  }
+
+  .dropdown-label {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    width: 100%; /*make about and gallery  label take up the full width*/
+    color: black;
+    padding: 1rem;
+    border: 1px solid rgb(243, 243, 243);
+  }
+
+  /* dropdown label hover effect e.g about and gallery */
+  .dropdown-label:hover {
+    background-color: rgb(90, 46, 26);
+    color: white;
+  }
+  .mobile-dropdown-menu-list-item {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+  }
+  /* dropdown listitem hover effect:about and gallery */
+  .mobile-dropdown-menu-list-item:hover {
+    background-color: sienna;
+    color: white;
+  }
+
+  /* About dropdown container */
+  .mobile-dropdown-menu-container-about {
+    display: none;
+  }
+
+  /* Show about container */
+  #toggle-about:checked ~ .mobile-dropdown-menu-container-about {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 243, 243);
+  }
+
+  /*Hide gallery dropdown container */
+  .mobile-dropdown-menu-container-gallery {
+    display: none;
+  }
+  /* Show gallery  dropdown container */
+  #toggle-gallery:checked ~ .mobile-dropdown-menu-container-gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 250, 250);
+  }
 }

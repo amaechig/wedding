@@ -1,10 +1,19 @@
+#hero {
+  display: flex;
+  height: 56rem;
+  background-image: url("../assets/images/about-couples-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 #couples-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  padding-top: 2rem;
-  padding-bottom: 10rem;
+  padding: 10rem 0;
 }
 
 .couples-column {
@@ -42,7 +51,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 40rem;
   background-image: url("../assets/images/b&g\ footer.jpg");
   background-position: center;
   background-size: cover;
