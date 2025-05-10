@@ -208,12 +208,13 @@ label {
     background-color: rgb(90, 46, 26);
     color: white;
   }
+  /* Inner dropdown list */
   .mobile-dropdown-menu-list-item {
     font-size: 1.5rem;
     text-transform: uppercase;
     padding: 1rem 2rem;
   }
-  /* dropdown listitem hover effect:about and gallery */
+  /* dropdown list item hover effect:about and gallery */
   .mobile-dropdown-menu-list-item:hover {
     background-color: sienna;
     color: white;

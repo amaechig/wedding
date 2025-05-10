@@ -52,15 +52,15 @@
   justify-content: center;
   align-items: center;
   height: 40rem;
-  background-image: url("../assets/images/b&g\ footer.jpg");
+  background-image: url("../assets/images/bg-about-couples-footer.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  border-top: 3px solid gainsboro;
+  /* border-top: 3px solid gainsboro; */
 }
 
-#footer-banner > article {
+/* #footer-banner > article {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,4 +69,4 @@
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   text-align: center;
-}
+} */
